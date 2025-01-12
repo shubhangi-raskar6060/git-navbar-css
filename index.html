@@ -4,5 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+        }
+        .product-card{
+            width: 400px;
+            height: 500px;
+            border: 2px solid #b35900;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            margin: 10px 20px;
+            
+        }
+        .product-image{
+            width: 100;
+            display: block;
+            margin: 0px auto;
+            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-title{
+            text-align: center;
+        }
+        .product-description{
+            text-align: justify;
+            padding: 0 10px;
+        }
+        .product-btn{
+            display: block;
+            margin: 0 auto;
+            font-size: 25px;
+            padding: 5px 20px;
+            border-radius: 50px;
+            border: none;
+            background-color: #b35900;
+        }
+        .navbar{
+            background-color: #3a3631;
+            color: white;
+            padding: 10px;
+            text-align:  center;
+            width: 100%;
+            position: stickey;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+        .brand{
+            display: flex;
+            align-items: center;
+        }
+        .brand-logo{
+            height: 100px;
+        }
+        .menu{
+            margin-left: 1000px;
+        }
+        .search{
+            margin-left: 800px;
+        }
+        .menu-item{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 10px
+        }
+        .menu-item:hover{
+            text-decoration: underline;
+
+        }
+        .search-box{
+            padding:  5px 20px;
+            border-radius: 30px;
+            border: none;
+        }
+        /* Mobile    */ 
+        @media (max-width: 600px) {
+            .product-title{
+                text-align: left;
+                padding-left: 20px;
+                font-size: 24px;
+                margin: 10px 0;
+            }
+            .product-card{
+            width: 400px;
+            height: 400px;
+
+        }
+        .product-btn{
+            font-size: 20px;
+            padding:  5px 10px;
+        }
+        .product-description{
+            padding:  0 20px;
+            font-size: 16px;
+        }
+    }
+        /* Tablet   */
+        @media (max-width: 601px) and (max-width:800px) {
+            .product-card{
+            width: 300px;
+            height: 410px;
+             }
+             .product-title{
+                font-size: 24px;
+             }
+             .product-description{
+                font-size: 16px;
+             }
+             .product-btn{
+                font-size: 20px;
+                padding: 5px 30px;
+             }
+        }
+        /* laptop  */
+        @media (max-width: 801px) and (max-width:1024px) {
+        }
+    </style>
 </head>
+<body>
+    <div class="navbar">
+        <div class="brand">
+            <img src="./img/small_bird.png" class="brand-logo" alt="bird-logo" height="100px"/></div>
+            <h2>Indian Birds</h2>
+        <div class="menus">
+            <a href="#" class="menu-item">Home</a>
+            <a href="#" class="menu-item">About</a>
+            <a href="#" class="menu-item">Contact</a>
+            </div>  
+        <div class="search"> 
+            <input type="text" placeholder="search" class="search-box" />
+        </div>
+    </div>
+    <h1>Indian Birds</h1>
+    <div class="container">
+        <div class="container">
+                    <div class="product-card">
+                        <img src="./img/peacock.jpg" class="product-image" alt="peacock" height="100px">
+                        <h1 class="product-title">peacock</h1>
+                        <p  class="product-description">
+                            A peacock use its ornate train in a courtship display, wherein it raises the tail feathers into an arched fan and quivers them.
+                            The wings are held half open and drooped and it periodically vibrates the long feathers, producing a ruffling sound. It faces the peahen initially and might turn around to display the tail.
+                            The peacock may also freeze over food to invite a peahen in a form of courtship feeding.</p>
+                            <button class="product-btn">Know More</button>
+            
+                    </div>
+                    <div class="container">
+                        <div class="product-card">
+                            <img src="./img/peacock.jpg" class="product-image" alt="peacock" height="100px">
+                            <h1 class="product-title">peacock</h1>
+                            <p  class="product-description">
+                                A peacock use its ornate train in a courtship display, wherein it raises the tail feathers into an arched fan and quivers them.
+                                The wings are held half open and drooped and it periodically vibrates the long feathers, producing a ruffling sound. It faces the peahen initially and might turn around to display the tail.
+                                The peacock may also freeze over food to invite a peahen in a form of courtship feeding.</p>
+                                <button class="product-btn">Know More</button>
+                
+                        </div>
+                        <div class="container">
+                            <div class="product-card">
+                                <img src="./img/peacock.jpg" class="product-image" alt="peacock" height="100px">
+                                <h1 class="product-title">peacock</h1>
+                                <p  class="product-description">
+                                    A peacock use its ornate train in a courtship display, wherein it raises the tail feathers into an arched fan and quivers them.
+                                    The wings are held half open and drooped and it periodically vibrates the long feathers, producing a ruffling sound. It faces the peahen initially and might turn around to display the tail.
+                                    The peacock may also freeze over food to invite a peahen in a form of courtship feeding.</p>
+                                    <button class="product-btn">Know More</button>
+                    
+                            </div>
+    </div>
+</body>
 </html>
