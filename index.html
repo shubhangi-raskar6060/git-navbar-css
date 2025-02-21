@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homepage</title>
+    <title>Responsive Navbar</title>
     <style>
-        body{
+       body{
             margin: 0;
             padding: 0;
         }
@@ -88,6 +88,10 @@
             border-radius: 30px;
             border: none;
         }
+        .menu-icon{
+            height:60px;
+            display: none;
+        }
         /* Mobile    */ 
         @media (max-width: 600px) {
             .product-title{
@@ -109,28 +113,50 @@
             padding:  0 20px;
             font-size: 16px;
         }
+        .search-box {
+            display: none;
+        }
+        .menu{
+            display: none;
+        }
+        .menu-icon{
+            display: block;
+            margin-left: auto;
+            margin-right: 50px;5
+        }
+    } 
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
     }
-        /* Tablet   */
-        @media (max-width: 601px) and (max-width:800px) {
-            .product-card{
-            width: 300px;
-            height: 410px;
-             }
-             .product-title{
-                font-size: 24px;
-             }
-             .product-description{
-                font-size: 16px;
-             }
-             .product-btn{
-                font-size: 20px;
-                padding: 5px 30px;
-             }
-        }
-        /* laptop  */
-        @media (max-width: 801px) and (max-width:1024px) {
-        }
-    </style>
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 20px;
+    }
+
+    
+ </style>
 </head>
 <body>
     <div class="navbar">
@@ -145,6 +171,7 @@
         <div class="search"> 
             <input type="text" placeholder="search" class="search-box" />
         </div>
+        <img src="img/menu.png" class="menu-icon" alt="Menu icon" />
     </div>
     <h1>Indian Birds</h1>
     <div class="container">
@@ -184,3 +211,4 @@
     </div>
 </body>
 </html>
+
